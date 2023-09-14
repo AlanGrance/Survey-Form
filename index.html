@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>encuesta</title>
+</head>
+<body>
+    
+    <header>
+      <h1 id="title">Esto es un titlo</h1>
+      <p id="description">Esto es una descripcion</p>
+    </header>
+<form id="survey-form" action="">
+      <fieldset>
+        <legend><h2>Introdusca sus Datos</h2></legend>
+        <label class="data-label" id="name-label" for="name">Nombre: <input type="text" id="name" placeholder="escriba su nombre,ej:Pedro" required></label><br>
+        <label class="data-label" id="email-label" for="email">Email:   <input type="email" id="email" placeholder="ej:pedroperez@gmail.com.ar" required></label><br>
+        <label class="data-label" id="number-label" for="number">Edad: <input type="number" id="number" pattern="[0-9]{3,}" min="18" max="120"  placeholder="ej:18" required></label><br>
+        <label for="">Seleccione una opcion: 
+          <select name="" id="dropdown">
+            <option value="1">seleccione</option>
+            <option value="2">opcion 1 </option>
+            <option value="3">opcio 2 </option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Selecione uno</h2></legend>
+        <label class="label-radio" for="primera-opcion"><input type="radio" name="primero-segundo" id="primera-opcion" class="radio"value="primera-opcion"checked>  Primera opcion</label><br>
+        <label class="label-radio" for="segunda-opcion"><input type="radio" name="primero-segundo" id="segunda-opcion" class="radio" value="segunda-opcion">  Segunda opcion</label><br>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Eliga una o mas opciones</h2></legend>
+        <label class="label-check" for="1"><input class="checkbox" type="checkbox" value="1" checked>  1</label><br>
+        <label  class="label-check" for="2"><input class="checkbox" type="checkbox" value="2">  2</label><br>
+        <label class="label-check" for="3"><input class="checkbox" type="checkbox" value="3">  3</label><br>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Comentarios adicionales</h2></legend>
+        <textarea name="" id="textarea" cols="30" rows="10" placeholder="escriba aqui..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+</body>
+</html>
